@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 public class HelloController {
 
     @GetMapping("/hello")
-    @ResponseBody
-    public String helloGet() {
+    public String helloGet(Model model) {
+        model.addAttribute("tekst", "asdasdsdas");
         return "helloget";
     }
 
@@ -25,7 +25,7 @@ public class HelloController {
 
     @GetMapping({"/", "/index"})
     public String index (Model model, HttpServletRequest request) {
-        model.addAttribute("user", "uzytk");
+        model.addAttribute("user", request.getRemoteUser());
         return "index";
     }
 }
