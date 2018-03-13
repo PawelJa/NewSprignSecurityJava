@@ -4,7 +4,16 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-Zalogowany użytkownik: ${user}
+Zalogowany użytkownik:
+<c:choose>
+    <c:when test="${user==null}">
+        niezalogowany
+    </c:when>
+    <c:otherwise>
+        ${user}
+    </c:otherwise>
+</c:choose>
+
 <br>
 <form method="post" action="/logout">
     <button type="submit">wyloguj !</button>
