@@ -28,4 +28,5 @@ public class HelloController {
         model.addAttribute("user", request.getRemoteUser());
         return "index";
     }
+
 }

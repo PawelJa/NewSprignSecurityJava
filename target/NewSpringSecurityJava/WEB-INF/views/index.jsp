@@ -5,5 +5,10 @@
 <body>
 <h2>Hello World!</h2>
 Zalogowany użytkownik: ${user}
+<br>
+<form method="post" action="/logout">
+    <button type="submit">wyloguj !</button>
+    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+</form>
 </body>
 </html>
