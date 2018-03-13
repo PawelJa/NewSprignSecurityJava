@@ -53,4 +53,10 @@ public class HelloController {
 
     }
 
+    @GetMapping("/myLogin")
+    public String myLogin(Model model) {
+
+        return "myLogin";
+    }
+
 }
