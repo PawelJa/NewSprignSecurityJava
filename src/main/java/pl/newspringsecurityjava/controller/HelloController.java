@@ -29,4 +29,9 @@ public class HelloController {
         return "index";
     }
 
+    @GetMapping("/admin")
+    public String adminPermit() {
+        return "admin";
+    }
+
 }

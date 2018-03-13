@@ -4,21 +4,12 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-Zalogowany użytkownik:
-<c:choose>
-    <c:when test="${user==null}">
-        niezalogowany
-    </c:when>
-    <c:otherwise>
-        ${user}
-    </c:otherwise>
-</c:choose>
-
+Zalogowany użytkownik: <%=request.getRemoteUser()%>
+<p>widok jsp dla admina !</p>
 <br>
 <form method="post" action="/logout">
     <button type="submit">wyloguj !</button>
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 </form>
-<p><a href="/admin">go to adminPage</a></p>
 </body>
 </html>

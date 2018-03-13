@@ -19,5 +19,6 @@ Zalogowany użytkownik:
     <button type="submit">wyloguj !</button>
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 </form>
+<p><a href="/admin">go to adminPage</a></p>
 </body>
 </html>
