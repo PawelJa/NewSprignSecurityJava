@@ -29,7 +29,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/admin").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
-                .formLogin().loginPage("/myLogin").permitAll().and()
+                .formLogin().loginPage("/myLogin").permitAll()
+                .defaultSuccessUrl("/index")
+                .loginProcessingUrl("/mylogurl")
+                .passwordParameter("myPass")
+                .usernameParameter("myUser")
+                .and()
                 .exceptionHandling().accessDeniedPage("/403");
     }
 

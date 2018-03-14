@@ -46,11 +46,9 @@ public class HelloController {
             System.out.println(userDetail);
 
             model.addAttribute("user", userDetail.getUsername());
-
         }
 
         return "403";
-
     }
 
     @GetMapping("/myLogin")

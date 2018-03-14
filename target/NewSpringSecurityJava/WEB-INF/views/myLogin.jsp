@@ -5,13 +5,15 @@
 <head>
     <title>Title</title>
 </head>
-<body>
-
-<form method="post" action="#">
+<body onload='document.loginForm.username.focus();'>
+<c:if test="${param.error != null}">
+    asd
+</c:if>
+<form method="post" action="/mylogurl">
     <label>Użytkownik</label>
-    <input type="text" id="user" placeholder="użytkownik" name="username" required autofocus>
+    <input type="text" id="user" placeholder="użytkownik" name="myUser" required autofocus>
     <label>Hasło</label>
-    <input type="text" id="inputPassword" name="password" required>
+    <input type="password" id="inputPassword" name="myPass" required>
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <button type="submit">zaloguj</button>
 </form>
