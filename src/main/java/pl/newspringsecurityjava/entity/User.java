@@ -25,8 +25,6 @@ public class User {
     @Email
     private String email;
 
-    
-
     public Long getId() {
         return id;
     }
@@ -59,5 +57,6 @@ public class User {
         this.email = email;
     }
 
-
+    public User() {
+    }
 }
