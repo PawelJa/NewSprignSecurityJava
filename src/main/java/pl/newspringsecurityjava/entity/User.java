@@ -25,6 +25,9 @@ public class User {
     @Email
     private String email;
 
+    @NotEmpty
+    private String role;
+
     public Long getId() {
         return id;
     }
@@ -57,6 +60,16 @@ public class User {
         this.email = email;
     }
 
-    public User() {
+    public String getRole() {
+        return role;
     }
+
+    public void setRole(String role) {
+        this.role = "ROLE_" + role;
+    }
+
+    public User() {
+        setRole("USER");
+    }
+
 }

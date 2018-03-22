@@ -5,9 +5,9 @@ import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
 
 @Entity
-@Table(name="roles")
+@Table(name="role")
 
-public class Roles {
+public class Role {
 
     @NotEmpty
     @Column(unique = true)
@@ -29,6 +29,9 @@ public class Roles {
     }
 
     public void setRole(String role) {
-        this.role = role;
+        this.role = "ROLE_" + role;
+    }
+
+    public Role() {
     }
 }

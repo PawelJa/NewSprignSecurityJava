@@ -13,14 +13,14 @@ import javax.servlet.http.HttpServlet;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Override
-    @Bean
-    protected UserDetailsService userDetailsService() {
-        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-        manager.createUser(User.withUsername("jan").password("asd").roles("USER").build());
-        manager.createUser(User.withUsername("admin").password("asd").roles("ADMIN").build());
-        return manager;
-    }
+//    @Override
+//    @Bean
+//    protected UserDetailsService userDetailsService() {
+//        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
+//        manager.createUser(User.withUsername("jan").password("asd").roles("USER").build());
+//        manager.createUser(User.withUsername("admin").password("asd").roles("ADMIN").build());
+//        return manager;
+//    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
