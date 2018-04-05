@@ -25,18 +25,6 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     @Autowired
     RoleToUserProfileConverter roleToUserProfileConverter;
 
-//    @Bean
-//    public LocalEntityManagerFactoryBean entityManagerFactory() {
-//        LocalEntityManagerFactoryBean emfb = new LocalEntityManagerFactoryBean();
-//        emfb.setPersistenceUnitName("SpringSecurityJava");
-//        return emfb;
-//    }
-//
-//    @Bean
-//    public JpaTransactionManager transactionManager(EntityManagerFactory emf) {
-//        JpaTransactionManager tm = new JpaTransactionManager(emf);
-//        return tm;
-//    }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -67,5 +55,4 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     public void configurePathMatch(PathMatchConfigurer matcher) {
         matcher.setUseRegisteredSuffixPatternMatch(true);
     }
-}
 }

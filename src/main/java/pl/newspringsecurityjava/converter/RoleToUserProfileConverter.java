@@ -3,13 +3,13 @@ package pl.newspringsecurityjava.converter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 import pl.newspringsecurityjava.entity.UserProfile;
 import pl.newspringsecurityjava.service.UserProfileService;
 
-
 @Component
-public class RoleToUserProfileConverter {
+public class RoleToUserProfileConverter implements Converter<Object, UserProfile> {
 
     static final Logger logger = LoggerFactory.getLogger(RoleToUserProfileConverter.class);
 

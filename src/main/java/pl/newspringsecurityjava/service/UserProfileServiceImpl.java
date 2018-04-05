@@ -1,6 +1,7 @@
 package pl.newspringsecurityjava.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pl.newspringsecurityjava.entity.UserProfile;
@@ -10,7 +11,7 @@ import java.util.List;
 
 @Transactional
 @Service("userProfileService")
-public class UserProfileServiceImpl {
+public class UserProfileServiceImpl implements UserProfileService {
 
     @Autowired
     UserProfileDao dao;
