@@ -13,6 +13,7 @@ import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import pl.newspringsecurityjava.converter.RoleToUserProfileConverter;
 
 import javax.persistence.EntityManagerFactory;
 
