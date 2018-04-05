@@ -15,12 +15,12 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[] { WebSecurityConfig.class };
+        return new Class[] { AppConfig.class };
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] { AppConfig.class };
+        return null;
     }
 
     @Override
@@ -28,18 +28,18 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
         return new String[] { "/" };
     }
 
-    public void onStartup(ServletContext container) throws ServletException {
-        AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
-        ctx.register(AppConfig.class);
-        ctx.setServletContext(container);
-        ServletRegistration.Dynamic servlet = container.addServlet("dispatcher", new DispatcherServlet(ctx));
-        servlet.setLoadOnStartup(1);
-        servlet.addMapping("/");
-    }
-
-    protected Filter[] getServletFilters() {
-        CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
-        characterEncodingFilter.setEncoding("UTF-8");
-        return new Filter[] { characterEncodingFilter };
-    }
+//    public void onStartup(ServletContext container) throws ServletException {
+//        AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
+//        ctx.register(AppConfig.class);
+//        ctx.setServletContext(container);
+//        ServletRegistration.Dynamic servlet = container.addServlet("dispatcher", new DispatcherServlet(ctx));
+//        servlet.setLoadOnStartup(1);
+//        servlet.addMapping("/");
+//    }
+//
+//    protected Filter[] getServletFilters() {
+//        CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
+//        characterEncodingFilter.setEncoding("UTF-8");
+//        return new Filter[] { characterEncodingFilter };
+//    }
 }

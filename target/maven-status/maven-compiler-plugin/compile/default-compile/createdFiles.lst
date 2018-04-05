@@ -1,0 +1,6 @@
+pl/newspringsecurityjava/entity/Role.class
+pl/newspringsecurityjava/controller/HelloController.class
+pl/newspringsecurityjava/app/WebSecurityConfig.class
+pl/newspringsecurityjava/app/AppConfig.class
+pl/newspringsecurityjava/entity/User.class
+pl/newspringsecurityjava/app/AppInitializer.class

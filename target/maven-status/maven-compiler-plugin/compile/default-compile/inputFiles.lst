@@ -1,0 +1,10 @@
+/home/pawel/IdeaProjects/NewSpringSecurityJava/src/main/java/pl/newspringsecurityjava/app/WebSecurityConfig.java
+/home/pawel/IdeaProjects/NewSpringSecurityJava/src/main/java/pl/newspringsecurityjava/app/AppConfig.java
+/home/pawel/IdeaProjects/NewSpringSecurityJava/src/main/java/pl/newspringsecurityjava/entity/Role.java
+/home/pawel/IdeaProjects/NewSpringSecurityJava/src/main/java/pl/newspringsecurityjava/app/AppInitializer.java
+/home/pawel/IdeaProjects/NewSpringSecurityJava/src/main/java/pl/newspringsecurityjava/security/UserPrincipal.java
+/home/pawel/IdeaProjects/NewSpringSecurityJava/src/main/java/pl/newspringsecurityjava/repository/UserRepository.java
+/home/pawel/IdeaProjects/NewSpringSecurityJava/src/main/java/pl/newspringsecurityjava/entity/User.java
+/home/pawel/IdeaProjects/NewSpringSecurityJava/src/main/java/pl/newspringsecurityjava/controller/HelloController.java
+/home/pawel/IdeaProjects/NewSpringSecurityJava/src/main/java/pl/newspringsecurityjava/controller/UserController.java
+/home/pawel/IdeaProjects/NewSpringSecurityJava/src/main/java/pl/newspringsecurityjava/app/SecurityWebApplicationInitializer.java
