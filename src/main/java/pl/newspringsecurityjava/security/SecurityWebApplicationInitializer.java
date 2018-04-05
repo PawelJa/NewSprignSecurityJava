@@ -1,4 +1,4 @@
-package pl.newspringsecurityjava.app;
+package pl.newspringsecurityjava.security;
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 
