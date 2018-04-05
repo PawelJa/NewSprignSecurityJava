@@ -4,10 +4,19 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import pl.newspringsecurityjava.entity.User;
 
-//@Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+import java.util.List;
 
-    User findByUsername(String username);
+public interface UserDao {
+
+    User findById(int id);
+
+    User findBySSO(String sso);
+
+    void save(User user);
+
+    void deleteBySSO(String sso);
+
+    List<User> findAllUsers();
 
 
 }
