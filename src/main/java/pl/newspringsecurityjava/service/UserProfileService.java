@@ -1,6 +1,6 @@
 package pl.newspringsecurityjava.service;
 
-import pl.newspringsecurityjava.entity.UserProfile;
+import pl.newspringsecurityjava.model.UserProfile;
 
 import java.util.List;
 

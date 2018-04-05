@@ -1,14 +1,14 @@
-package pl.newspringsecurityjava.repository;
+package pl.newspringsecurityjava.dao;
 
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
-import org.springframework.stereotype.Service;
-import pl.newspringsecurityjava.entity.UserProfile;
+import org.springframework.stereotype.Repository;
+import pl.newspringsecurityjava.model.UserProfile;
 
 import java.util.List;
 
-@Service("userProfileDao")
+@Repository("userProfileDao")
 public class UserProfileDaoImpl extends AbstractDao<Integer, UserProfile>implements UserProfileDao {
 
     public UserProfile findById(int id) {

@@ -1,9 +1,8 @@
-package pl.newspringsecurityjava.entity;
+package pl.newspringsecurityjava.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
-
 
 @Entity
 @Table(name="PERSISTENT_LOGINS")

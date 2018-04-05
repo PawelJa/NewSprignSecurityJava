@@ -1,11 +1,10 @@
 package pl.newspringsecurityjava.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import pl.newspringsecurityjava.entity.UserProfile;
-import pl.newspringsecurityjava.repository.UserProfileDao;
+import pl.newspringsecurityjava.model.UserProfile;
+import pl.newspringsecurityjava.dao.UserProfileDao;
 
 import java.util.List;
 

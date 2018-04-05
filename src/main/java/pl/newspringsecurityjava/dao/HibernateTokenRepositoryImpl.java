@@ -1,4 +1,4 @@
-package pl.newspringsecurityjava.repository;
+package pl.newspringsecurityjava.dao;
 
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
@@ -8,11 +8,11 @@ import org.springframework.security.web.authentication.rememberme.PersistentReme
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import pl.newspringsecurityjava.entity.PersistentLogin;
+import pl.newspringsecurityjava.model.PersistentLogin;
 
 import java.util.Date;
 
-@Repository("tokenRepository")
+@Repository("tokenRepositoryDao")
 @Transactional
 public class HibernateTokenRepositoryImpl extends AbstractDao<String, PersistentLogin>
         implements PersistentTokenRepository {

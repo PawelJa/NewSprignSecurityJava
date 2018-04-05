@@ -1,4 +1,4 @@
-package pl.newspringsecurityjava.entity;
+package pl.newspringsecurityjava.model;
 
 import java.io.Serializable;
 

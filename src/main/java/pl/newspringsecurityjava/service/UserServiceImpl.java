@@ -4,14 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import pl.newspringsecurityjava.entity.User;
-import pl.newspringsecurityjava.repository.UserDao;
+import pl.newspringsecurityjava.model.User;
+import pl.newspringsecurityjava.dao.UserDao;
 
 import java.util.List;
 
 @Transactional
 @Service("userService")
-public class UserServiceImpl {
+public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserDao dao;
@@ -35,7 +35,7 @@ public class UserServiceImpl {
 
     /*
      * Since the method is running with Transaction, No need to call hibernate update explicitly.
-     * Just fetch the entity from db and update it with proper values within transaction.
+     * Just fetch the model from db and update it with proper values within transaction.
      * It will be updated in db once transaction ends.
      */
     public void updateUser(User user) {

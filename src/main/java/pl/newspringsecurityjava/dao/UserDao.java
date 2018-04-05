@@ -1,8 +1,6 @@
-package pl.newspringsecurityjava.repository;
+package pl.newspringsecurityjava.dao;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-import pl.newspringsecurityjava.entity.User;
+import pl.newspringsecurityjava.model.User;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package pl.newspringsecurityjava.repository;
+package pl.newspringsecurityjava.dao;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;

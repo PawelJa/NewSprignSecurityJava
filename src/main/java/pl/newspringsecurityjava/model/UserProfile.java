@@ -1,6 +1,4 @@
-package pl.newspringsecurityjava.entity;
-
-import org.hibernate.validator.constraints.NotEmpty;
+package pl.newspringsecurityjava.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

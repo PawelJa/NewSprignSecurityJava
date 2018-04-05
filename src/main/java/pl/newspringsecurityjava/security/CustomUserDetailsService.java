@@ -10,12 +10,11 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import pl.newspringsecurityjava.entity.User;
-import pl.newspringsecurityjava.entity.UserProfile;
+import pl.newspringsecurityjava.model.User;
+import pl.newspringsecurityjava.model.UserProfile;
 import pl.newspringsecurityjava.service.UserService;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 @Service("customUserDetailsService")
